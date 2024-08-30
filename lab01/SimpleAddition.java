@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class SimpleAddition {
 	public static void main(String[] args) {
 		//prompt user to input first number
-		System.out.println("Input the number you'd like to add in succession: ");
+		// System.out.println("Input the number you'd like to add in succession: ");
 
 
 		//create scanner class to receive user input

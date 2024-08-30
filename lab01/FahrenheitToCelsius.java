@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class FahrenheitToCelsius {
 	public static void main(String[] args) {
 		//prompt user to input a temp in fahrenheit to convert it to celsius
-		System.out.println("Please input a temp in Fahrenheit that you would like to convert into celsius: ");
+		// System.out.println("Please input a temp in Fahrenheit that you would like to convert into celsius: ");
 
 		//create scanner to retrieve user input
 		Scanner input = new Scanner(System.in);

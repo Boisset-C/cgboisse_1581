@@ -5,7 +5,7 @@ public class AreaOfASquare {
 	//method
 	public static void main(String[] args) {
 		//prompt user to input a length to calculate Area of square
-		System.out.print("Input a number to calculate the Area of a Square: ");
+		// System.out.print("Input a number to calculate the Area of a Square: ");
 		
 		// create scanner class to store user input
 		Scanner input = new Scanner(System.in);

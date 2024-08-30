@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class PerimeterOfARectangle {
 	public static void main(String[] args) {
 		//prompt user to first input length and second input the width
-		System.out.println("Please first enter the length of the rectangle, second enter the width of the rectangle: ");
+		// System.out.println("Please first enter the length of the rectangle, second enter the width of the rectangle: ");
 
 		//create scanner class to retrieve user input
 		Scanner input = new Scanner(System.in);

@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class TablespoonsToTeaspoons {
 	public static void main(String[] args) {
 		//prompt user for input
-		System.out.print("Enter a Tablespoon number to convert to quantity of teaspoons: ");
+		// System.out.print("Enter a Tablespoon number to convert to quantity of teaspoons: ");
 		//create scanner class to store user input
 		Scanner  input = new Scanner(System.in);
 
