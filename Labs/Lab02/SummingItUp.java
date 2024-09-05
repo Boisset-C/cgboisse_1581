@@ -6,8 +6,6 @@ public class SummingItUp {
 		//prompt user to add two inputs
 		// System.out.println("Add two inputs they should be intengers between -10,000 and 10,000 you will get the sum of each numbers between ");
 
-		//!!!  FIRST CHECK HOW MANY ITERATIONS!!!
-
 		//create scanner to grab user input 
 		Scanner input = new Scanner(System.in);
 
