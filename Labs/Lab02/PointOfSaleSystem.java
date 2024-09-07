@@ -72,35 +72,40 @@ public class PointOfSaleSystem {
 			
 		}
 
-			//calculate order total
 			for (int j = 0; j < orderArray.length; j++) {
 				int itemOrdered = orderArray[j];
 
-				// 1 should be menu[0] = 1.50
-				if (itemOrdered == 1) {
-					orderTotal += menu[0];
-				}
-				else if (itemOrdered == 2) {
-					orderTotal += menu[1];
-				}
-				else if (itemOrdered == 3) {
-					orderTotal += menu[2];
-				}
-				else if (itemOrdered == 4) {
-					orderTotal += menu[3];
-				}
-				else if (itemOrdered == 5) {
-					orderTotal += menu[4];
-				}
-				else if (itemOrdered == 6) {
-					orderTotal += menu[5];
-				}
 
+			
+			// calculate order total
+			switch(itemOrdered) {
+				case 1:
+					orderTotal += menu[0];
+					break;
+				case 2:
+					orderTotal += menu[1];
+					break;
+				case 3:
+					orderTotal += menu[2];
+					break;
+				case 4:
+					orderTotal += menu[3];
+					break;
+				case 5:
+					orderTotal += menu[4];
+					break;
+				case 6:
+					orderTotal += menu[5];
+					break;
+
+				}
 			}
+
+
 			//output "Please pay $12.77" +  sum and on next line log the string "Thank you for eating at MacDowell's"
 			double finalPriceWithTax = Math.ceil((orderTotal + (orderTotal * tax)) * 100.0) / 100.0;
 
-			System.out.println(String.format("Please pay $%.2f%nThank you for eating at McDowell's!%n", finalPriceWithTax));			
+			System.out.println(String.format("Please pay $%.2f%nThank you for eating at McDowell's!", finalPriceWithTax));			
 
 			orderTotal = 0;
 			counter++;
