@@ -100,9 +100,7 @@ public class PointOfSaleSystem {
 			//output "Please pay $12.77" +  sum and on next line log the string "Thank you for eating at MacDowell's"
 			double finalPriceWithTax = Math.ceil((orderTotal + (orderTotal * tax)) * 100.0) / 100.0;
 
-			System.out.println(String.format("Please pay $%.2f%n", finalPriceWithTax));
-			System.out.println("Thank you for eating at McDowell's!");
-			
+			System.out.println(String.format("Please pay $%.2f%nThank you for eating at McDowell's!%n", finalPriceWithTax));			
 
 			orderTotal = 0;
 			counter++;
