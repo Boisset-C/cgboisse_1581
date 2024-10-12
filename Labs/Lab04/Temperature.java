@@ -18,11 +18,12 @@ static double celsiusToFahrenheit(double celsius)
 
  static double kelvinToCelsius(double kelvin)
                Returns degrees Celsius from degrees Kelvin, C=K−273.15 
+              
  */
 
 public class Temperature {
     public static double celsiusToFahrenheit(double celsius) {
-        return 9 / 5 * (celsius + 32);
+        return 9.0 / 5 * celsius + 32;
     }
 
     public static double celsiusToKelvin(double celsius) {
@@ -30,15 +31,15 @@ public class Temperature {
     }
 
     public static double fahrenheitToCelsius(double fahrenheit) {
-        return 5 / 9 * (fahrenheit - 32);
+        return (fahrenheit - 32) * 5.0 / 9  ;
     }
 
     public static double fahrenheitToKelvin(double fahrenheit) {
-        return 5 / 9 * (fahrenheit + 459.67);
+        return (5.0 / 9) * (fahrenheit + 459.67);
     }
 
     public static double kelvinToFahrenheit(double kelvin) {
-        return 9 / 5 * (kelvin - 459.67);
+        return (9.0 / 5 * kelvin) - 459.67;
     }
 
     public static double kelvinToCelsius(double kelvin) {

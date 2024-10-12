@@ -28,7 +28,7 @@
  */
 public class Time {
     public static double secondsToMinutes(int seconds) {
-        return seconds / 60;
+        return seconds / 60.0;
     }
 
     public static double secondsToHours(int seconds) {
