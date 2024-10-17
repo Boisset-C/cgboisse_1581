@@ -1,3 +1,4 @@
+package Lab05;
 //Cosme Boisset - Lab05 - Problem 4: Logical Util
 
 /*
@@ -10,48 +11,54 @@ public class RelationalUtil {
   public static boolean isIncreasing(int x, int y, int z) {
     if (x < y && y < z) {
       return true;
-    } else
+    } else {
     return false;
+    }
   }
 
   //Returns true if x is larger than y and y is larger than z, exclusive
   public static boolean isDecreasing(int x, int y, int z) {
     if (x > y && y > z) {
       return true;
-    } else
+    } else {
     return false;
+    }
   }
 
   //Returns true if y is between x and z, inclusive 
   public static boolean isBetween(int x, int y, int z) {
-    if (x > y && y > z || x < y && y < z ) {
+    if (x >= y && y >= z || x <= y && y <= z ) {
       return true;
-    } else
+    } else {
     return false;
+    }
   }
 
   //Returns true if the number is positive
   public static boolean isPositive(int x, int y, int z) {
     if (x > 0 && y > 0 && z > 0) {
       return true;
-    } else
+    } else {
     return false;
+    }
   }
 
   //Returns true if the number is negative
   public static boolean isNegative(int x, int y, int z) {
     if (x < 0 && y < 0 && z < 0) {
       return true;
-    } else
+    } else {
     return false;
+    }
   }
 
   //Returns true if two line segments, min to max, overlap with one another 
   public static boolean overlaps(int min1, int max1, int min2, int max2) {
-    if (min1 <= min2 || max1 <= max2) {
+    if (min1 <= max2 || min2 <= max1) {
       return true;
-    } else
+    } else {
     return false;
+    }
   }
 
 }

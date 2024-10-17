@@ -1,3 +1,4 @@
+package Lab05;
 //Cosme Boisset - Lab05 - Problem 1: Datatype Util Class
 
 /*
