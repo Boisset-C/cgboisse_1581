@@ -31,27 +31,25 @@ public class ArrayUtil {
 
   //Problem 3: add
   public static String[] add(String element, String[] array) {
-    int startFrom = 0;
-    int totalArray = element.length() + array.length;
-    String[] resultArray = new String[totalArray];
-    String[] elementArray = element.split("");
 
     for (int i = 0; i < array.length; i++) {
-      if (array[i].equals(null)) {
-        startFrom += i;
-        break;
-      }
+      if (array[i] == null) {
+        array[i] = element;
+        return array;
+      } 
     }
 
-    int currentIndexElementArray = 0;
+    String[] resultArray = new String[array.length * 2];
 
-    for (int j = startFrom; j < element.length(); j++) {
-      resultArray[j] = elementArray[currentIndexElementArray]; 
-      currentIndexElementArray++;
+
+    for (int j = 0; j < array.length;j++) {
+        resultArray[j] = array[j];
     }
 
+    resultArray[array.length] = element;
 
-    return elementArray;
+
+    return resultArray;
 
   }
 
@@ -65,6 +63,7 @@ public class ArrayUtil {
     while (counter <= array.length) {
       if (elementArray[counter].equals(array[counter]) ) {
         containesElement = true;
+        counter++;
         break;
       }
 
