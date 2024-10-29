@@ -3,16 +3,19 @@
 public class ArrayUtil {
 
   //Problem 1: Reverse the array
-  public static String[] reverse(String[] array) {
-    String[] reverseArray = new String[array.length];
-    int newIndex = 0;
+  public static void reverse(String[] array) {
+    int left = 0;
+    int right = array.length - 1;
 
-    for(int i = array.length - 1; i >= 0; i++) {
-      reverseArray[newIndex] = array[i];
-      newIndex++;
+    while (left < right) {
+      String tempNum = array[left];
+      array[left] = array[right];
+      array[right] = tempNum;
+
+      left++;
+      right--;
     }
 
-    return reverseArray;
   }
 
   //Problem 2: resize
